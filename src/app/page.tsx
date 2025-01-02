@@ -1,7 +1,16 @@
+import { SignedIn ,SignedOut, SignInButton, SignUpButton } from "@clerk/nextjs";
+
 export default function Home() {
   return (
     <div>
-      home page      
+    {/* Testing Route */}
+      <SignedOut>
+        <SignUpButton />
+      </SignedOut>
+
+      <SignedIn>
+        <SignInButton />
+      </SignedIn>
     </div>
   );
 }
